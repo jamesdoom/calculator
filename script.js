@@ -77,12 +77,6 @@ function beta() {
     }
 }
 
-/*function key() {
-    document.addEventListener('keyup', (e)=> {
-        if (/[0-9]/g.test(e.key)) {
-    })
-*/
-
 let numPressed = e => {
     if(numCurrent === 0){
         document.getElementById("display").innerHTML = "";
@@ -126,8 +120,8 @@ let signPressed = e => {
 }
 
 for (let button of numButtons) {
-  button.addEventListener("click", numPressed);
-  button.addEventListener("click", beta);
+    button.addEventListener("click", numPressed);
+    button.addEventListener("click", beta);
 }
 
 for (let button of signButtons) {
@@ -140,4 +134,3 @@ document.getElementById("clear").addEventListener("click", erase);
 document.getElementById("=").addEventListener("click", equal);
 document.getElementById("=").addEventListener("click", max);
 document.getElementById("back").addEventListener("click", back);
-//document.addEventListener("keyup", key);
